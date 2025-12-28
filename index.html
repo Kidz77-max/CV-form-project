@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Kidus Yosef">
-    <meta name="description" content="This page contains my very fist html project, a CV form.">
-    <meta name="keyword" content="HTML, Project, CV">
+    <meta name="description" content="This page contains my very first html project, a CV form.">
     <meta name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Single-Page CV</title>
-    <meta property="og:title" content="Single-Paged CV"/>
-    <meta prperty="og:description" content="A Single-Paged CV form.">
-    <meta property="og:type" content="profile"/>
-    <meta property="og:url" content="https://kidz77-max.github.io/CV-form-project/"/>
+    <meta property="og:title" content="Single-Paged CV">
+    <meta property="og:description" content="A Single-Paged CV form.">
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://kidz77-max.github.io/CV-form-project/">
     <link rel="icon" href="cv.png" type="image/x-icon">
     <style>
         body{
@@ -20,7 +19,7 @@
             border: solid black;
             padding: 60px 200px 60px 60px;
             font-family: monospace;
-            font-size: x-large;
+            font-size: 20px;
             margin: 50px 100px 50px 50px;
         }
         hr{
@@ -28,17 +27,21 @@
             width: 80%;
             margin-left: 0;
         }
-        .p1{
+        h2{
             color: rgb(33, 162, 33);
-            font-weight: 700;
+            font-size: 20px;
         }
-        span{
+        h3{
             color: #0775dc;
-            font-weight: 700;
+            font-size: 20px;
         }
         ul{
             list-style-position: inside; 
             padding: 0;
+        }
+        a{
+            color: black;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -46,39 +49,42 @@
     <section>
         <hr>
         <h1 >Your Name</h1>
-        <p class="p1">Junior Frontend Developer</p>
+        <h2>Junior Frontend Developer</h2>
+        <address>
+            123 Your street<br>
+            Your City, ST 12345<br>
+            <a href="tel:+251954619721">(123) 456-7890</a><br>
+            <a href="mailto:no_reply@example.com">no_reply@example.com</a>
+        </address>
+    </section>
+    <section>
+        <h2>Skills</h2>
         <p>
-            123 Your street
-            <br>Your City, ST 12345
-            <br>(123) 456-7890
-            <br>no_reply@example.com
+            HTML, CSS, Javascript, Accessibility, Figma to Design, Responsive Web Design,<br>
+            Technical writing, Presentation
         </p>
-        <br>
-        <p class="p1">Skills</p>
-        <p>
-            HTML, CSS, Javascript, Accessibility, Figma to Design, Responsive Web Design,<br> Technical writing, Presentation
-        </p>
-        <br>
-        <p class="p1">Education</p>
-        <p>
-            <span">School Name, Location - Degree</span>
-            <br>Month 20xx to Month20xx
-            <br>List of exciting things you did at university
-        </p>
-        <br>
-        <p class="p1">Experience</p>
-        <p>
-            <span>Company Name, Location - Job Title</span>
-            <br>Month 20xx to Month20xx
-            <ul>
-                <li>List of achievements </li>
-                <li>List of achievements </li>
-                <li>List of achievements </li>
-            </ul>
-            Skills: List of Skills used or gained at this Company
-        </p>
-        <br>
-        <p class="p1">Across the Internet</p>
+    </section>
+    <section>
+        <h2>Education</h2>
+        <h3>School Name, Location - Degree</h3>
+            <p>
+                Month 20xx to Month20xx<br>
+                List of exciting things you did at university
+            </p>
+    </section>
+    <section>
+        <h2>Experience</h2>
+        <h3>Company Name, Location - Job Title</h3>
+        <p>Month 20xx to Month20xx</p>
+        <ul>
+            <li>List of achievements </li>
+            <li>List of achievements </li>
+            <li>List of achievements </li>
+        </ul>
+        <p>Skills: List of Skills used or gained at this Company</p>
+    </section>
+    <section>
+        <h2>Across the Internet</h2>
         <p>Add your LinkedIn, GitHub profile links</p>
     </section>
 </body>
